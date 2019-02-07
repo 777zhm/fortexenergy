@@ -1,0 +1,150 @@
+/*
+Theme Name: Fortexenergy
+Author: Zhmurko Yuriy
+Author URI: https://zhmurko.com.ua/
+Description: theme for Fortexenergy company
+Version: 1.00
+Text Domain: fortexenergy
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	background-color: #F5F8FA;
+	color: #777;
+}
+
+
+/* Start Grids */
+
+.header {
+	display: grid;
+	grid-template-areas: "a b c";
+}
+
+.footer {
+
+}
+
+.footer_first_row{
+	display: grid;
+	grid-template-areas: 
+			"b b a";
+
+}
+
+.footer_second_row{
+	display: grid;
+
+}
+
+
+.grid_item {
+	background: #8EC642;
+	padding: 2px;
+	border: 0.2px dashed #777;
+}
+
+
+/* End Grids */
+/* Start Menus */
+
+.main_menu ul{
+	list-style: none;
+}
+
+.main_menu ul li{
+	display: inline-block;
+}
+
+.main_menu ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+.footer_menu ul{
+	list-style: none;
+}
+
+.footer_menu ul li{
+	display: inline-block;
+}
+
+.footer_menu ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+/* End Menus */
+
+/*** Start overlay_menu navigation ***/
+
+.burger_icon_box{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+.burger_icon{
+	font-size: 36px;
+	cursor: pointer;
+	padding: 12px 18px 12px 18px ;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay_menu {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .burger_icon_close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .burger_icon_close {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/*** End overlay_menu navigation ***/

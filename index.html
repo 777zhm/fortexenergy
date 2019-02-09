@@ -10,8 +10,8 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header_logo grid_item"><img src="img/logo_black.png" alt="fortexenergy_logo"></div>
-		<nav class="main_menu grid_item">
+		<div class="header_logo"><img src="img/logo_black.png" alt="fortexenergy_logo"></div>
+		<nav class="main_menu">
 			<ul>
 				<li><a href="#">Головна</a></li>
 				<li><a href="about-us.html">Про компанію</a></li>
@@ -46,47 +46,69 @@
 		</div>
 	</header>
 
-	<main>
-		<section>
-			<h2>Фортекс енерджі - ваш партнер у досягненні успіху</h2>
-			<p>Фортекс енерджі - надійний постачальник енергоносіїв споживачам. Місія ФОРТЕКС ЕНЕРДЖІ полягає в надійному, ефективному і збалансованому забезпеченні споживачів природним газом та іншими видами енергії. Стратегічною метою ФОРТЕКС ЕНЕРДЖІ ...</p>
-			<button>Читати далі</button>
+	<main class="main">
+
+		
+		<section class="mainscreen">
+			<div class="mainscreen_left">
+				<div class="">
+					<h1>Fortex Energy - ваш партнер</h1>
+					<p>Надійний постачальник енергоносіїв споживачам</p>
+				</div>
+			</div>
+			<div class="mainscreen_right">
+				<form id="form_mainscreen" class="form_mainscreen">
+					<h2>Дізнайтесь персональну ціну на газ</h2>
+					<div class="input_box">
+						<input id="fi_1" type="text" name="edrpou" placeholder="" data-placeholder="12345678">
+						<label for="fi_1" unselectable="on">Введіть ЄДРПОУ</label>
+					</div>
+					<div class="input_box">
+						<input id="fi_2" type="text" name="email"  placeholder="" data-placeholder="your.email@email.com">
+						<label for="fi_2" unselectable="on">Введіть електронну адресу</label>
+					</div>
+					<div class="input_box">
+						<input id="fi_3" type="text"  name="phone"  placeholder="" data-placeholder="+380 00 123 5678">
+						<label for="fi_3" unselectable="on">Телефон</label>
+					</div>
+					<button type="submit" class="base_btn">
+						<span>Дізнатись ціну</span>
+					</button>
+				</form>
+			</div>
 		</section>
-		<section>
-			
-		</section>	
+
+
 	</main>
 	
 	<footer class="footer">
 		<div class="footer_first_row">
-			<div class="footer_logo grid_item"><img src="assets/img/logo.png" alt="fortexenergy_logo"></div>
-			<nav class="footer_menu grid_item">
+			<div class="footer_logo"><img src="img/logo_black.png" alt="fortexenergy_logo"></div>
+			<nav class="footer_menu">
 				<ul>
-					<li><a href="gas.html">Постачання природного газу</a></li>
-					<li><a href="energy.html">Постачання електроенергії</a></li>
+					<li><a href="gas.html">Природний газ</a></li>
+					<li><a href="energy.html">Електроенергія</a></li>
 					<li><a href="spojivacham.html">Споживачам</a></li>
 					<li><a href="contact.html">Контакти</a></li>
 				</ul>
 			</nav>
-			<div class="footer_tel grid_item">
-				<p>+38 (044) 228 96 01</p>
-			</div>
 		</div>
 		<div class="footer_second_row">
-			<div class="footer_email grid_item">
-				<h4>Пошта</h4>
+			<div class="footer_address">
+					<h4>Адреса</h4>
+					<p>вул. Новокостянтинівська, буд. 18, поверх 1, оф. 1</p>
+					<p>04080, м. Київ</p>
+			</div>
+			<div class="footer_tel">
+				<h4>Телефон</h4>
+				<a href="tel:+380442289601">+38(044)228-96-01</a>
 				<p>info@fortexenergy.com</p>
 			</div>
-			<div class="footer_address grid_item">
-				<h4>Адреса</h4>
-				<p>вул. Новокостянтинівська, буд. 18, поверх 1, оф. 1</p>
-				<p>04080, м. Київ</p>
-			</div>
-			<div class="footer_schedule grid_item">
-				<h4>Графік роботи</h4>
-				<p>Пн-Чт: 09:00 - 18:00</p>
-				<p>Пт: 09.00 - 17.00</p>
-				<p>Обід: 13.00 - 14.00</p>
+			<div class="footer_schedule">
+					<h4>Графік роботи</h4>
+					<p>Пн-Чт: 09:00 - 18:00</p>
+					<p>Пт: 09.00 - 17.00</p>
+					<p>Обід: 13.00 - 14.00</p>
 			</div>
 		</div>
 	</footer>
